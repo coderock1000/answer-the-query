@@ -29,3 +29,5 @@ SELECT product_name, AVG(price) AS average_price FROM Sales GROUP BY product_nam
 SELECT sale_id, product_name, (quantity * price) AS revenue FROM Sales ORDER BY revenue DESC ;
 
 SELECT product_name, SUM(quantity) AS   total_quantity FROM Sales GROUP BY product_name HAVING SUM(quantity) > 10;
+
+SELECT * FROM SALES
